@@ -30,3 +30,8 @@ This project uses **CrewAI**, **LangChain**, and a locally running **Ollama** mo
   - Group composition (e.g., 2 adults)
 
 ---
+<p align="center">
+  <img src="demo/travel_guide_demo1.gif" width="30%" />
+  <img src="demo/travel_guide_demo2.gif" width="30%" />
+  <img src="demo/travel_guide_demo3.gif" width="30%" />
+</p>
