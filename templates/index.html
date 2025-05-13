@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>AI-Powered Travel Guide</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <div class="container">
+    <h1>🌍 AI-Powered Travel Guide</h1>
+    <p>💡 <strong>Plan your next trip with AI!</strong></p>
+
+    <form method="POST">
+      <input type="text" name="city" placeholder="City" required>
+      <input type="text" name="state" placeholder="State" required>
+      <input type="text" name="country" placeholder="Country" required>
+      <input type="text" name="travel_dates" placeholder="Travel Dates" required>
+      <input type="text" name="preferences" placeholder="Preferences (comma-separated)" required>
+      <select name="budget" required>
+        <option value="low">Low</option>
+        <option value="mid-range" selected>Mid-range</option>
+        <option value="high">High</option>
+      </select>
+      <input type="text" name="group_info" placeholder="Group Info" required>
+      <button type="submit">🚀 Generate Travel Plan</button>
+    </form>
+
+    {% if error %}
+      <p class="error">⚠️ {{ error }}</p>
+    {% endif %}
+
+    {% if result %}
+      <h2>✅ Your AI-Powered Travel Plan</h2>
+      <pre>{{ result }}</pre>
+    {% endif %}
+  </div>
+</body>
+</html>
