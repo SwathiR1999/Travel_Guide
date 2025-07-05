@@ -5,24 +5,24 @@ This project uses **CrewAI**, **LangChain**, and a locally running **Ollama** mo
 
 ---
 
-## 🌐 Features
+## Features
 
-- ✅ **Multi-Agent Collaboration**  
+- **Multi-Agent Collaboration**  
   Assigns specific tasks to expert agents for itinerary construction, weather analysis, and destination research.
 
-- 🌤️ **Live Weather Forecast Integration**  
+- **Live Weather Forecast Integration**  
   Uses the **OpenWeather API** to assess real-time weather and suggest indoor alternatives when necessary.
 
-- 🔍 **Web Search with DuckDuckGo**  
+- **Web Search with DuckDuckGo**  
   Finds local experiences, food recommendations, and hidden gems using DuckDuckGo's search results.
 
-- 🧠 **Local LLM Inference with Ollama**  
+- **Local LLM Inference with Ollama**  
   Runs the `ollama/llama3.2` model locally for fast and secure LLM responses without cloud dependencies.
 
-- 🗺️ **Detailed Day-by-Day Itinerary**  
+- **Detailed Day-by-Day Itinerary**  
   Builds a structured, balanced travel plan that considers timing, rest, meals, transportation, and fallback options.
 
-- 💡 **Personalized Preference Handling**  
+- **Personalized Preference Handling**  
   Tailors suggestions based on:
   - Interests (e.g., culture, temples, food)
   - Travel pace (e.g., moderate)
